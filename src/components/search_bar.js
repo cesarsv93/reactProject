@@ -10,7 +10,7 @@ class SearchBar extends Component {
   render() { //Always have to define a render method
     return (
       <div>
-        <input 
+        <input //Controlled component state
           value={this.state.term}
           onChange={e => this.setState({ term: e.target.value })} 
         />
